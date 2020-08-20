@@ -112,19 +112,27 @@ input.inputt {
   color: white;
 }
 
+.btn2 a:hover {
+  color: rgb(175, 171, 171);
+}
+
 .btn1 {
-    margin-top: 4rem;
-    margin-bottom: 5rem;
-    background: #1e2a5a;
-    border-radius: 10px;
-    border: none;
-    color: white;
-    padding: 0.8rem 4rem 0.8rem 4rem;
-    /* margin-bottom:1rem; */
-  }
-  .btn1 a {
-    color: white;
-  }
+  margin-top: 4rem;
+  margin-bottom: 5rem;
+  background: #1e2a5a;
+  border-radius: 10px;
+  border: none;
+  color: white;
+  padding: 0.8rem 4rem 0.8rem 4rem;
+  /* margin-bottom:1rem; */
+}
+.btn1 a {
+  color: white;
+}
+
+.btn1 a:hover {
+  color: rgb(175, 171, 171);
+}
 
 /* leaderboard styling */
 h1.result-header {
@@ -143,45 +151,47 @@ h1.result-header {
 }
 
 .leader--card2 {
-    flex-direction: row !important;
-    border: 1px solid rgba(0, 0, 0, 0.09);
-    box-sizing: border-box;
-    border-radius: 7px;
-    padding:0.5rem 2rem 0.5rem 2rem;
+  flex-direction: row !important;
+  border: 1px solid rgba(0, 0, 0, 0.09);
+  box-sizing: border-box;
+  border-radius: 7px;
+  padding: 0.5rem 2rem 0.5rem 2rem;
+}
+
+.leader--card2 .card-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.leader--card2 .card-image img {
+  width: 50px;
+  height: 50px;
+  margin: 0;
+}
+
+.leader--card2 .card-image h4 {
+  margin-left: 10px;
+}
+
+.leader--card2 .leader--btn {
+  margin-left: auto;
+  border-radius: 50%;
+  height: 50px;
+  width: 50px;
+  background-color: #1e2a5a;
+  border: none;
+}
+
+h4.evicted-name {
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 30px;
+  text-align: center;
+  color: #18bbb6;
+}
+
+@media screen and (max-width: 640px) {
+  .wrapper{
+    width: 100%;
   }
-
-  .leader--card2 .card-image{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    
-  }
-  .leader--card2 .card-image img{
-    width: 50px;
-    height: 50px;
-    margin: 0;
-  }
-
-  .leader--card2 .card-image h4{
-    margin-left: 10px;
-  }
-
-  .leader--card2 .leader--btn{
-    margin-left: auto;
-    border-radius: 50%;
-    height: 50px;
-    width: 50px;
-    background-color:#1E2A5A;
-    border:none;
-  }
-
-  h4.evicted-name{
-    font-weight: bold;
-    font-size: 26px;
-    line-height: 30px;
-    text-align: center;
-    color: #18BBB6;
-  }
-
-
-
+}
