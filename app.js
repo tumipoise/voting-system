@@ -32,7 +32,7 @@ nengiPlus.addEventListener("click", () => {
     vn--;
     voteNumber.textContent = vn;
     console.log(vn);
-    let voteLen = (vn * 100) / 10;
+    let voteLen = (vn / 10) * 100;
     console.log(voteLen);
     progressBar.style.width = `${voteLen}%`;
   }
@@ -43,7 +43,7 @@ nengiMinus.addEventListener("click", () => {
     nengiInput.value--;
     vn++;
     voteNumber.textContent = vn;
-    let voteLen = (vn * 100) / 10;
+    let voteLen = (vn / 10) * 100;
     console.log(voteLen);
     progressBar.style.width = `${voteLen}%`;
   }
@@ -54,6 +54,8 @@ ozoPlus.addEventListener("click", () => {
     ozoInput.value++;
     vn--;
     voteNumber.textContent = vn;
+    let voteLen = (vn / 10) * 100;
+    progressBar.style.width = `${voteLen}%`;
   }
 });
 
@@ -62,6 +64,8 @@ ozoMinus.addEventListener("click", () => {
     ozoInput.value--;
     vn++;
     voteNumber.textContent = vn;
+    let voteLen = (vn / 10) * 100;
+    progressBar.style.width = `${voteLen}%`;
   }
 });
 
@@ -70,6 +74,8 @@ kiddwayaPlus.addEventListener("click", () => {
     kiddwayaInput.value++;
     vn--;
     voteNumber.textContent = vn;
+    let voteLen = (vn / 10) * 100;
+    progressBar.style.width = `${voteLen}%`;
   }
 });
 
@@ -78,6 +84,8 @@ kiddwayaMinus.addEventListener("click", () => {
     kiddwayaInput.value--;
     vn++;
     voteNumber.textContent = vn;
+    let voteLen = (vn / 10) * 100;
+    progressBar.style.width = `${voteLen}%`;
   }
 });
 
@@ -86,6 +94,8 @@ ericaMinus.addEventListener("click", () => {
     ericaInput.value--;
     vn++;
     voteNumber.textContent = vn;
+    let voteLen = (vn / 10) * 100;
+    progressBar.style.width = `${voteLen}%`;
   }
 });
 
@@ -94,6 +104,8 @@ ericaPlus.addEventListener("click", () => {
     ericaInput.value++;
     vn--;
     voteNumber.textContent = vn;
+    let voteLen = (vn / 10) * 100;
+    progressBar.style.width = `${voteLen}%`;
   }
 });
 
@@ -102,6 +114,8 @@ layconMinus.addEventListener("click", () => {
     layconInput.value--;
     vn++;
     voteNumber.textContent = vn;
+    let voteLen = (vn / 10) * 100;
+    progressBar.style.width = `${voteLen}%`;
   }
 });
 layconPlus.addEventListener("click", () => {
@@ -109,6 +123,8 @@ layconPlus.addEventListener("click", () => {
     layconInput.value++;
     vn--;
     voteNumber.textContent = vn;
+    let voteLen = (vn / 10) * 100;
+    progressBar.style.width = `${voteLen}%`;
   }
 });
 
@@ -117,6 +133,8 @@ dorathyMinus.addEventListener("click", () => {
     dorathyInput.value--;
     vn++;
     voteNumber.textContent = vn;
+    let voteLen = (vn / 10) * 100;
+    progressBar.style.width = `${voteLen}%`;
   }
 });
 
@@ -125,5 +143,7 @@ dorathyPlus.addEventListener("click", () => {
     dorathyInput.value++;
     vn--;
     voteNumber.textContent = vn;
+    let voteLen = (vn / 10) * 100;
+    progressBar.style.width = `${voteLen}%`;
   }
 });
